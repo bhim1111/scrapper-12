@@ -1,4 +1,5 @@
 import requests
+
 from bs4 import BeautifulSoup
 import json
 import sqlite3
@@ -53,7 +54,7 @@ def save_to_csv(books):
 
 
 def create_table():
-    import sqlite3
+   
     conn = sqlite3.connect("books.sqlite3")
     cursor = conn.cursor()
 
