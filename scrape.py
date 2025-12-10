@@ -5,6 +5,22 @@ import json
 import sqlite3
 import csv
 
+#git init
+#git status => if you want to check what are the status of file
+#git add .
+#git commit -m "bhim timsina"
+#create repository in github
+#copy past git code from github
+
+
+
+#1 change the code
+#2 git add .
+#3 git commit -m "your message"
+#4 git push
+
+
+
 # URL of the website to scrape
 url = "http://books.toscrape.com/"
 
@@ -91,10 +107,8 @@ def main():
     save_to_csv(books)
     save_to_json(books)
     create_table()
-
     for book in books:
         insert_book(book["title"], book["currency"], book["price"])
-
     print("✔ All books inserted into database!")
 
 
